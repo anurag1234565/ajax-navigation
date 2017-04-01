@@ -14,7 +14,7 @@ function setUpHistoryClicks()
 function addClicker(link)
 {
     $(link).bind('click', function(e) {
-    $("#"+id).html("loading...");
+  //  $("#"+id).html("loading..."); add something here if you want a loading message
     swapContents(link.href);
     document.title = link.id;
     history.pushState(null,null,link.href);
